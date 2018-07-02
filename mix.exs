@@ -20,6 +20,9 @@ defmodule Issues.MixProject do
 
   # Run "mix help deps" to learn about dependencies.
   defp deps do
-    [{:httpoison, "~> 1.0"}]
+    [
+      {:httpoison, "~> 1.0"},
+      {:jsx, "~> 2.9.0"}
+    ]
   end
 end
