@@ -22,7 +22,8 @@ defmodule Issues.MixProject do
   defp deps do
     [
       {:httpoison, "~> 1.0"},
-      {:jsx, "~> 2.9.0"}
+      {:jsx, "~> 2.9.0"},
+      {:hackney, "~> 1.13.0"}
     ]
   end
 end
