@@ -5,6 +5,8 @@ defmodule Issues.MixProject do
     [
       app: :issues,
       version: "0.1.0",
+      name: "Issues",
+      source_url: "https://github.com/IggHub/issues",
       elixir: "~> 1.6",
       escript: escript_config,
       start_permanent: Mix.env() == :prod,
@@ -24,7 +26,8 @@ defmodule Issues.MixProject do
     [
       {:httpoison, "~> 1.0"},
       {:jsx, "~> 2.9.0"},
-      {:hackney, "~> 1.13.0"}
+      {:hackney, "~> 1.13.0"},
+      {:ex_doc, "~> 0.16", only: :dev, runtime: false}
     ]
   end
 
